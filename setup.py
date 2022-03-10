@@ -21,6 +21,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=["roxar_proxy"],
-    python_requires=">=3.7",
+    python_requires=">=3.6",
 )
 
