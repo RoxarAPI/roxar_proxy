@@ -2,6 +2,8 @@
 from enum import Enum, unique
 import numpy as np
 
+__version__ = "0.0.1"
+
 ROXAR_FOUND = True
 
 try:
