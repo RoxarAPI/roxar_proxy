@@ -7,7 +7,7 @@ setuptools.setup(
     name="roxar_proxy",
     version="0.0.0",
     author="Havard Bjerke",
-    author_email="havard.bjerke@emerson.com",
+    author_email="havard.bjerke@aspentech.com",
     description="Roxar mock library.",
     long_description=long_description,
     long_description_content_type="text/markdown",

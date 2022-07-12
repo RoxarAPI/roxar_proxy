@@ -1,6 +1,7 @@
 "Conditinal mock Roxar API for unit tests."
 from enum import Enum, unique
 import numpy as np
+import numpy.ma
 
 __version__ = "0.0.0"
 
@@ -74,7 +75,7 @@ class MockLogCurve:
         return self.values
 
     def set_values(self, values):
-        self.values = np.array(values)
+        self.values = np.ma.masked_equal(values, -999)
 
     def set_code_names(self, name_map):
         self.code_names = name_map
