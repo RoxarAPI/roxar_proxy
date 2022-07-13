@@ -23,4 +23,3 @@ setuptools.setup(
     packages=["roxar_proxy"],
     python_requires=">=3.6",
 )
-

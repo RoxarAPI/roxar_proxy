@@ -77,6 +77,8 @@ class MockLogCurve:
         return self.values
 
     def set_values(self, values):
+        if None in values:
+            raise ValueError
         self.values = np.ma.masked_equal(values, -999)
 
     def set_code_names(self, name_map):
