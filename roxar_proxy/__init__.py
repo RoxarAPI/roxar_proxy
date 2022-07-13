@@ -1,4 +1,5 @@
 "Conditinal mock Roxar API for unit tests."
+
 from enum import Enum, unique
 import numpy as np
 import numpy.ma
@@ -18,6 +19,7 @@ PROJECT = None
 
 
 class ProjectSingleton:
+    "Singleton holding a project."
     project = None
 
 
@@ -101,6 +103,8 @@ class MockLogRun:
         self.measured_depths = np.array([])
 
     def set_measured_depths(self, value):
+        if len(value) == 0:
+            raise ValueError
         self.measured_depths = np.array(value)
 
     def get_measured_depths(self):
