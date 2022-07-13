@@ -4,7 +4,7 @@ from enum import Enum, unique
 import numpy as np
 import numpy.ma
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 ROXAR_FOUND = True
 
